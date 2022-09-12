@@ -1,0 +1,527 @@
+body{
+    margin: 0;
+    font-family: 'mont-reg';
+    overflow-x:hidden;
+}
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'mont-thin';
+    src: url(asset/fonts/Montserrat-Thin.otf);
+}
+@font-face {
+    font-family: 'mont-semi-bold';
+    src: url(asset/fonts/Montserrat-SemiBold.otf);
+}
+@font-face {
+    font-family: 'mont-reg';
+    src: url(asset/fonts/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family: 'mont-med';
+    src: url(asset/fonts/Montserrat-Medium.otf);
+}
+@font-face {
+    font-family: 'mont-light';
+    src: url(asset/fonts/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family: 'mont-extra-bold';
+    src: url(asset/fonts/Montserrat-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'mont-bold';
+    src: url(asset/fonts/Montserrat-Bold.otf);
+}
+@font-face {
+    font-family: 'mont-extra-light';
+    src: url(asset/fonts/Montserrat-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: 'mont-black';
+    src: url(asset/fonts/Montserrat-Black.otf);
+}
+.text-bold{
+    font-family: 'mont-bold';
+}
+
+.text-black{
+    font-family: 'mont-black';
+}
+
+.text-light{
+    font-family: 'mont-light';
+}
+
+.text-thin{
+    font-family: 'mont-thin';
+}
+.container{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.logo-head {
+    width: 15%;
+    height: 20%;
+}
+.header-content ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.header-content ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header-content ul li a:hover{
+    border-radius: 10px;
+    background-color: grey;
+    padding: 10px 15px;
+    color: white;
+}
+.fav{
+    width: 30px;
+    margin-left: 15px;
+}
+.cart{
+    width: 30px;
+}
+.btn-login{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 5px 12px;
+    background-color: transparent;
+    margin-right: 15px;
+}
+.btn-login:hover{
+    background-color: grey;
+    color: white;
+}
+.btn-signup{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 5px 12px;
+    background-color: transparent;
+}
+.btn-signup:hover{
+    background-color: grey;
+    color: white;
+}
+.burgerbar{
+    display: none;
+}
+.mini-bar  {
+    max-height: 300px;
+    margin: 0;
+}
+.mini-bar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-minbar{
+    max-width: 200px;
+}
+.right-minbar{
+    max-width: 185px;
+}
+.form-control{
+    padding-right: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+.magnify-glass{
+    width: 25px;
+}
+.magnify-glasslow{
+    display: none;
+}
+
+.banner{
+    padding-bottom: 50px;
+}
+.slider{
+    position: relative;
+    height: 550px;
+    background: transparent;
+}
+.slider-data{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    display: none;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+.slider-content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 15px;
+    color: white;
+    height: 100%;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.slider-1{
+    background-image: url("asset/img/slider-1.png");
+}
+.slider-2{
+    background-image: url("asset/img/slider-2.png");
+}
+.slider-3{
+    background-image: url("asset/img/slider-3.png");
+}
+.words{
+    padding-bottom: 100px;
+    max-width: 300px;
+    text-shadow: 0px 0px 10px black;
+
+}
+/* Animation */
+@keyframes fade {
+    from{
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.pilihan{
+    padding-bottom: 100px;
+}
+.pilihan-data{
+    text-align: center;
+    font-family: 'mont-thin';
+}
+.pilihan-1{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 400px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+.card-btn{
+    padding: 15px 45px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 13px 0px;
+    margin-top: 100%;
+    background-color: white;
+    font-size: 30px;
+    font-family: 'mont-bold';
+}
+.card-pria {
+    background-image: url("asset/img/mens.jpg");
+   
+}
+.card-anak {
+    background-image: url("asset/img/children.jpg");
+
+}
+.card-wanita {
+    background-image: url("asset/img/women.jpg");
+}
+.card-kain{
+    background-image: url("asset/img/kain-batik.jpg");
+    
+}
+.card-tas{
+    
+    background-image: url("asset/img/tas.jpeg");
+}
+.card-sepatu{
+    
+    background-image: url("asset/img/footwears.jpg");
+}
+
+
+.top-brands-content{
+    height: 300px;
+    margin-bottom: 100px;
+    
+}
+.top-brands-content h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'mont-thin';
+}
+.brands-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.brands-img img{
+    width: 15%;
+    height: 15%;
+}
+
+.about-content{
+    display: flex;
+}
+
+.about-words{
+    width: 45%;
+}
+.about-words h1{
+    font-family: 'mont-thin';
+    font-size: 30px;
+    margin:70px 0;
+}
+.about-words p{
+    width: 75%;
+    margin-bottom: 200px;
+}
+.about-img{
+    width: 55%;
+}
+.about-img img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer{
+    background-color: #2E2E2E;
+    height: 500px;
+    padding: 5% 0;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    gap: 50px;
+}
+.fotconfig{
+    width: 25%;
+}
+.footer-1 p{
+    margin-bottom: 50px;
+}
+.footer-1 .fot-logo{
+    width: 76%;
+}
+.sosmed a{
+    margin-right: 10px;
+}
+.footer-2 li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-2 li a{
+    color: white;
+    text-decoration: none;
+}
+.footer-4 li{
+    list-style : none;
+    margin-bottom: 10px;
+    
+}
+.footer-4 li img{
+    margin-right: 10px;
+}
+.copyright{
+    text-align: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'mont-light';
+}
+.batik-garis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+.batik-garis img{
+    height: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Responsive Phone */
+
+@media only screen and (max-width:400px){
+    .burgerbar{
+        display: block;
+        width: 40px;
+    }
+    .container{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .header-button{
+        display: none;
+    }
+    .header-fun{
+        display: none;
+    }
+    .header-content ul{
+        display: none;
+    }
+    .logo-head{
+        width: 40%;
+
+    }
+    .search-bar{
+        display: none;
+    }
+    .right-minbar{
+        display: none;
+    }
+    .left-minbar{
+        display: block;
+        max-width: 100%;
+        font-size: 11px;
+        text-align: center;
+    }
+    .slider-content{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .slider-1 {
+        background-position-x: 70% ;
+        object-fit: cover;
+        background-repeat: no-repeat;
+
+    }
+    .slider-2 {
+        background-position: center;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position-x: 55% ;
+    }
+    .slider-3 {
+        background-position: center;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position-x: 70% ;
+    }
+    .pilihan-1 {
+        display: flexbox;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .card {
+        width: 350px;
+        height: 400px;
+    }
+    .card-btn {
+        margin-top: 80%;
+        padding: 10px 25px;
+    }
+
+    .top-brands{
+        display: block;
+    }
+    .top-brands-content {
+        margin-top: 0;
+    }
+
+    .brands-img{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .brands-img img{
+        width: 30%;
+        
+    }
+    .about{
+        display: block;
+        margin-top: 60%;
+    }
+    .about-content {
+        display: flexbox;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about-words{
+        width: 100%;
+    }
+    .about-words h1{
+        margin: 0;
+        text-align: center;
+    }
+    
+    .about-words p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .about-img{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .batik-garis {
+        width: 100%;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .fotconfig{
+        width: 100%;
+    }
+    footer{
+        height: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 1180px) {
+    .container {
+        max-width: 1100px;
+    }
+    .card {
+        width: 350px;
+    }
+    .pilihan-1 {
+        margin-bottom: 20px;
+    }
+    .brands-img {
+        width: 60%;
+    }
+    .top-brands-content {
+        margin-bottom: 0;
+    }
+    .footer-4 li {
+        font-size: 12px;
+    }
+    .sosmed a img{
+        width: 10%;
+    }
+}

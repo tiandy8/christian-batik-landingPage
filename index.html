@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batikan Lampung</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body >
+<!-- Header Section -->
+    <div class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="asset/logo/search.svg" alt="" class="magnify-glasslow">
+                
+                <img class="logo-head" src="asset/img/logo.png" alt="Batikan lampung">
+            <ul>
+                <li><a href="#">Pria</a></li>
+                <li><a href="#">Wanita</a></li>
+                <li><a href="#">Anak-Anak</a></li>
+                <li><a href="#">Hot-Products</a></li>
+            </ul>
+            <div class="header-fun">
+                
+            <img class="cart" src="asset/logo/cart.svg" alt="">
+            <img class="fav" src="asset/logo/heart.svg" alt="">
+            </div>
+                <div class="header-button">
+                    <button class="btn-login">log in</button>
+                    <button class="btn-signup">sign up</button>
+                </div>
+                
+                <a href="#"><img class="burgerbar" src="asset/logo/list.svg" alt=""></a>
+            </div>
+        </div>
+        <hr class="header-line">
+    </div>
+<!-- End of Header -->
+
+<!-- mini bar -->
+    <div class="mini-bar">
+        <div class="container">
+            <div class="mini-bar-content">
+                <p class="left-minbar">
+                    Dapatkan Diskon 50% dengan memasukkan kupon 'HUT77'
+                </p>
+                <div class="search-bar">
+                    <input type="text" class="form-control" placeholder="Cari barang yang kalian suka disini..">
+                    <img src="asset/logo/search.svg" alt="" class="magnify-glass">
+                </div>
+                <p class="right-minbar">Gratis Ongkir, dengan minimum pembelian 5 pcs.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Mini bar -->
+
+<!-- banner -->
+
+    <div class="banner">
+       <div class="container">
+        <div class="slider">
+            <div class="slider-data slider-1 bg-red active">
+                <div class="slider-content">
+                        <div class="words">
+                            <h1>Batik Hersey's Yang elegan</h1>
+                            <h3>Rp.399.000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-data slider-2 bg-dark">
+                <div class="slider-content">
+                    <div class="words">
+                        <h1>Batik Wonka Yang Lucu</h1>
+                        <h3>Rp.299.000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-data slider-3 bg-blue">
+                <div class="slider-content">
+                    <div class="words">
+                        <h1>Batik Mid-Night Tampak Dingin</h1>
+                        <h3>Rp.499.000</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       </div>
+    </div>  
+
+    <script>
+        $(document).ready(function () {
+            let sliderIndex = 0
+            showSlider()
+            function showSlider() {
+                let totalSlider = $(".slider-data").length
+                $(".slider-data").hide()
+                sliderIndex++
+
+                if (sliderIndex > totalSlider) {
+                    sliderIndex = 1
+                }
+                $(".slider-data")
+                    .eq(sliderIndex - 1)
+                    .show()
+
+                    setTimeout(showSlider, 3000)
+            }
+        })
+    </script>
+
+
+<!-- End of Banner -->
+
+<!-- Pilihan -->
+
+    <div class="pilihan">
+        <div class="container">
+            <div class="pilihan-data">
+                <h1>PILIHAN</h1>
+
+                <div class="pilihan-1">
+                    <div class="card card-pria">
+                        <button class="card-btn">pria</button>
+                    </div>
+                    <div class="card card-anak">
+                        <button class="card-btn">anak</button>
+                    </div>
+                    <div class="card card-wanita">
+                        <button class="card-btn">wanita</button>
+                    </div>
+                </div>
+                <div class="pilihan-1">
+                    <div class="card card-kain">
+                        <button class="card-btn">kain</button>
+                    </div>
+                    <div class="card card-tas">
+                        <button class="card-btn">tas</button>
+                    </div>
+                    <div class="card card-sepatu">
+                        <button class="card-btn">sepatu</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- End of Pilihan -->
+
+<!-- Top brands -->
+
+    <div class="top-brands">
+        <div class="container">
+            <div class="top-brands-content">
+                <h1>Top Popular Brands</h1>
+                <hr class="brands-line">
+                    <div class="brands-img">
+                        <img src="asset/img/hnm.png" alt="">
+                        <img src="asset/img/zara.png" alt="">
+                        <img src="asset/img/hackett.png" alt="">
+                        <img src="asset/img/uniqlo.png" alt="">
+                        <img src="asset/img/nike.png" alt="">
+                    </div>
+                <hr class="brands-line">
+            </div>
+        </div>
+    </div>
+
+<!-- end of top brands -->
+
+<!-- About -->
+
+    <div class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-words">
+                    <h1>About Batikan Lampung</h1>
+                    <p>Batikan Lampung adalah pusat e-commerce untuk produk batik-batik ternama, kami berpusat di Metro, Lampung, Indonesia. Perusahaan ini telah berdiri sejak tahun 1957, didirikan oleh Lorem Ipsum, Komitmen kami adalah memajukan Batik menuju Internasional dan dapat menjadi ciri khas negara Indonesia.</p>
+                </div>
+                <div class="about-img">
+                    <img src="asset/img/company.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end of about -->
+
+<!-- footer -->
+
+    <div class="batik-garis">
+        <img src="asset/img/batik.jpg" alt="">
+        <img src="asset/img/batik.jpg" alt="">
+        <img src="asset/img/batik.jpg" alt="">
+        <img src="asset/img/batik.jpg" alt="">
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-1 fotconfig">
+                    <img class="fot-logo" src="asset/img/Logo.png" alt="">
+                    <p>Batikan lampung Since 1957,Our Comitments is to prove to the world that Indonesia can make new Fashion Trends, <span class="text-bold">Batik Goes International</span></p>
+                    
+                    <div class="sosmed">
+                        <h3>Our Social Media</h3>
+                    <a href="#"><img src="asset/logo/facebook.png" alt=""></a>
+                    <a href="#"><img src="asset/logo/instagram.svg.png" alt=""></a>
+                    <a href="#"><img src="asset/logo/twitter.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-2 fotconfig">
+                    <h1 class="text-thin">Services</h1>
+                    <li class="text-thin"><a href="#">Promo</a></li>
+                    <li class="text-thin"><a href="#">Delivery Fee</a></li>
+                    <li class="text-thin"><a href="#">Order Status</a></li>
+                    <li class="text-thin"><a href="#">How to Sell your Products</a></li>
+                    <li class="text-thin"><a href="#">Contact Us</a></li>
+                </div>
+                <div class="footer-2 fotconfig">
+                    <h1 class="text-thin">About Us</h1>
+                    <li class="text-thin"><a href="#">About Us</a></li>
+                    <li class="text-thin"><a href="#">Promosikan Brand Anda </a></li>
+                    <li class="text-thin"><a href="#">How To Refund</a></li>
+                    <li class="text-thin"><a href="#">Kebijakan Kami</a></li>
+                    <li class="text-thin"><a href="#">Persyaratan & Ketentuan</a></li>
+                </div>
+                <div class="footer-4 fotconfig">
+                    <h1 class="text-thin">Contact Us</h1>
+                    <li class="text-thin"><img src="asset/logo/telpon.png" alt="">  +62 857 8891 1277</li>
+                    <li class="text-thin"><img src="asset/logo/email.png" alt="">   batikanlampung@gmail.com</li>
+                    <li class="text-thin"><img src="asset/logo/web.png" alt="">   www.batikanlampung.com</li>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright By Christiandy Nathannael 2022</p>
+    </div>
+<!-- end of footer -->
+</body>
+</html>
