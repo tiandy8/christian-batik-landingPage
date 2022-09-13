@@ -100,7 +100,7 @@ body{
     border: 2px black solid;
     border-radius: 10px;
     padding: 5px 12px;
-    background-color: transparent;
+    background-color: red;
     margin-right: 15px;
 }
 .btn-login:hover{
